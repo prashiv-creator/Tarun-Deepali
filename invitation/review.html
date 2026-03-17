@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review | Tarun & Deepali's Wedding</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <img src="../assets/img/left.png" alt="flowers left" class="top-left-decoration">
+    <img src="../assets/img/right.png" alt="flowers right" class="top-right-decoration">
+     
+    <div class="review-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 20px;">
+        <div class="card-box">
+            <!--
+            <h1 class="section-title" style="margin-bottom: 20px;">Wedding Review</h1>
+            
+            <div class="review-section" style="text-align: left; margin: 30px 0;">
+                <h3 class="subsection-title">Couple</h3>
+                <p style="font-family: 'Arvo', serif; color: #7a5c4d; line-height: 1.6;">
+                    <strong>Groom:</strong> Tarun Mahor<br>
+                    <strong>Bride:</strong> Deepali Rajwaniya
+                </p>
+            </div>
+            
+            <div class="review-section" style="text-align: left; margin: 30px 0;">
+                <h3 class="subsection-title">Wedding Details</h3>
+                <p style="font-family: 'Arvo', serif; color: #7a5c4d; line-height: 1.6;">
+                    <strong>Date:</strong> 25 April 2026<br>
+                    <strong>Venue:</strong> Ashirwad Garden, Ratu, Ranchi<br>
+                    <strong>Time:</strong> 7:00 PM onwards
+                </p>
+            </div>
+            
+            <div class="review-section" style="text-align: left; margin: 30px 0;">
+                <h3 class="subsection-title">Programs Schedule</h3>
+                <ul style="font-family: 'Arvo', serif; color: #7a5c4d; line-height: 1.8; list-style: none; padding: 0;">
+                    <li>&#127881; <strong>Lagan</strong> - 22 April 2026</li>
+                    <li>&#127882; <strong>Tika</strong> - 22 April 2026</li>
+                    <li>&#128131; <strong>Mehndi</strong> - 24 April 2026</li>
+                    <li>&#128141; <strong>Wedding</strong> - 25 April 2026</li>
+                </ul>
+            </div>
+            
+            <div class="review-section" style="text-align: left; margin: 30px 0;">
+                <h3 class="subsection-title">Contact</h3>
+                <p style="font-family: 'Arvo', serif; color: #7a5c4d; line-height: 1.6;">
+                    For any queries: <strong>+91 7878603568</strong><br>
+                    Venue Location: <a href="https://maps.app.goo.gl/eRWMZJ7a1WN7ozKg6" target="_blank" class="text-accent">See on Map</a>
+                </p>
+            </div>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 2px dashed #e6c97a;">
+                <p class="text-dancing text-accent" style="font-size: 1.3em;">
+                    We look forward to celebrating with you!
+                </p>
+            </div>
+            
+            <!-- Guest Book Section -->
+            <div class="guestbook-section" style="margin-top: 40px; text-align: left;">
+                <h3 class="subsection-title" style="text-align: center;">Guest Book</h3>
+                
+                <!-- Display All Wishes -->
+                <div id="wishes-display" style="margin: 20px 0;">
+                    <div class="wish-card" style="background: #fff; padding: 15px; border-radius: 10px; margin: 10px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p class="wish-text" style="font-family: 'Arvo', serif; color: #7a5c4d; font-style: italic;">"Wishing you both a lifetime of love, laughter, and happiness. May your journey together be filled with beautiful moments!"</p>
+                        <p class="wish-author" style="text-align: right; color: #b48a78; font-family: 'Dancing Script', cursive;">- Rahul & Priya</p>
+                    </div>
+                    <div class="wish-card" style="background: #fff; padding: 15px; border-radius: 10px; margin: 10px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p class="wish-text" style="font-family: 'Arvo', serif; color: #7a5c4d; font-style: italic;">"Congratulations on finding your perfect match! Here's to forever and always. Have a wonderful married life!"</p>
+                        <p class="wish-author" style="text-align: right; color: #b48a78; font-family: 'Dancing Script', cursive;">- The Sharma Family</p>
+                    </div>
+                    <div class="wish-card" style="background: #fff; padding: 15px; border-radius: 10px; margin: 10px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p class="wish-text" style="font-family: 'Arvo', serif; color: #7a5c4d; font-style: italic;">"May your love grow stronger with each passing day. Wishing you both all the joy in the world!"</p>
+                        <p class="wish-author" style="text-align: right; color: #b48a78; font-family: 'Dancing Script', cursive;">- Anjali & Family</p>
+                    </div>
+                </div>
+                
+                <!-- Wish Form -->
+                <div class="wish-form" style="background: #fff; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <h4 class="text-dancing text-accent" style="margin-bottom: 15px;">Leave Your Wishes</h4>
+                    <input type="text" id="wishName" placeholder="Your Name" style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #e0cfc2; border-radius: 5px; font-family: 'Arvo', serif;">
+                    <textarea id="wishMessage" rows="3" placeholder="Write your wishes here... " style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #e0cfc2; border-radius: 5px; font-family: 'Arvo', serif; resize: vertical;"></textarea>
+                    <button onclick="addWish()" class="btn-primary" style="margin-top: 10px;">Send Wishes</button>
+                    
+                    <!-- Admin Panel (Hidden by default) -->
+                    <div id="adminPanel" style="display: none; margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border: 1px solid #e25c67;">
+                        <p style="color: #b48a78; font-family: 'Arvo', serif; margin-bottom: 15px;">🔐 Admin Access Detected!</p>
+                        <input type="password" id="adminPassword" placeholder="Enter Admin Password" style="width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #e0cfc2; border-radius: 5px; font-family: 'Arvo', serif;">
+                        <button onclick="adminLogin()" class="btn-primary" style="margin-top: 5px;">Login</button>
+                        <button onclick="downloadExcel()" class="btn-gradient" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin-top: 10px; width: 100%;">
+                            📥 Download All Wishes (Excel)
+                        </button>
+                        <button onclick="adminLogout()" class="btn-primary" style="margin-top: 5px; background: #dc3545; width: 100%;">Logout</button>
+                    </div>
+                </div>
+                
+                <!-- Single Combined Button -->
+                <div style="text-align: center; margin-top: 25px;">
+                    <a href="thankyou.html" onclick="finalSubmit()" class="btn-gradient" style="background: linear-gradient(135deg, #b48a78 0%, #e25c67 100%);">
+                        Submit & Proceed to Thanks
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!---- Photo Gallery Section --
+      <section class="gallery-section">
+         <h2>Our Beautiful Moments</h2>
+         <div class="gallery-container">
+            <div class="gallery-slider" id="gallerySlider">
+               <div class="gallery-slide">
+                  <span>Photo 1 - Add your image here</span>
+               </div>
+               <div class="gallery-slide">
+                  <span>Photo 2 - Add your image here</span>
+               </div>
+               <div class="gallery-slide">
+                  <span>Photo 3 - Add your image here</span>
+               </div>
+               <div class="gallery-slide">
+                  <span>Photo 4 - Add your image here</span>
+               </div>
+               <div class="gallery-slide">
+                  <span>Photo 5 - Add your image here</span>
+               </div>
+               <div class="gallery-slide">
+                  <span>Photo 6 - Add your image here</span>
+               </div>
+            </div>
+            <button class="gallery-nav prev" onclick="moveGallery(-1)">&#10094;</button>
+            <button class="gallery-nav next" onclick="moveGallery(1)">&#10095;</button>
+         </div>
+         <div class="gallery-dots" id="galleryDots">
+            <span class="gallery-dot active" onclick="goToSlide(0)"></span>
+            <span class="gallery-dot" onclick="goToSlide(1)"></span>
+            <span class="gallery-dot" onclick="goToSlide(2)"></span>
+            <span class="gallery-dot" onclick="goToSlide(3)"></span>
+            <span class="gallery-dot" onclick="goToSlide(4)"></span>
+            <span class="gallery-dot" onclick="goToSlide(5)"></span>
+         </div>
+      </section>
+
+     
+
+      <!- Family Members Section --
+      <section class="family-section">
+         <h2>Our Families</h2>
+         <div class="family-container">
+            <div class="family-side">
+               <h3>Groom's Family</h3>
+               <div class="family-members">
+                  <div class="family-card">
+                     <div class="family-photo">&#128104;</div>
+                     <div class="family-info">
+                        <h4>Father's Name</h4>
+                        <p>Father of the Groom</p>
+                     </div>
+                  </div>
+                  <div class="family-card">
+                     <div class="family-photo">&#128105;</div>
+                     <div class="family-info">
+                        <h4>Mother's Name</h4>
+                        <p>Mother of the Groom</p>
+                     </div>
+                  </div>
+                  <div class="family-card">
+                     <div class="family-photo">&#128108;</div>
+                     <div class="family-info">
+                        <h4>Brother/Sister Name</h4>
+                        <p>Sibling</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="family-side">
+               <h3>Bride's Family</h3>
+               <div class="family-members">
+                  <div class="family-card">
+                     <div class="family-photo">&#128104;</div>
+                     <div class="family-info">
+                        <h4>Father's Name</h4>
+                        <p>Father of the Bride</p>
+                     </div>
+                  </div>
+                  <div class="family-card">
+                     <div class="family-photo">&#128105;</div>
+                     <div class="family-info">
+                        <h4>Mother's Name</h4>
+                        <p>Mother of the Bride</p>
+                     </div>
+                  </div>
+                  <div class="family-card">
+                     <div class="family-photo">&#128108;</div>
+                     <div class="family-info">
+                        <h4>Brother/Sister Name</h4>
+                        <p>Sibling</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+
+    
+    <div class="music">
+        <audio src="../assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
+    </div>
+    <script src="../js/continuous-audio.js"></script>
+    <script src="../admin-data-store.js"></script>
+    <script src="../config-backup.js"></script>
+    <script>
+        // Simple Local Storage Solution - No Setup Required!
+        
+        // Load existing wishes and guest name on page load
+        window.onload = function() {
+            loadGuestName();
+            loadWishes();
+        };
+        
+        // Load guest name from localStorage
+        function loadGuestName() {
+            const guestName = localStorage.getItem('guestName');
+            const nameInput = document.getElementById('wishName');
+            
+            if (guestName && nameInput) {
+                nameInput.value = guestName;
+                // Remove read-only to make it editable
+                // nameInput.readOnly = true;
+                // nameInput.style.backgroundColor = '#f5f5f5';
+                // nameInput.style.cursor = 'not-allowed';
+            }
+        }
+        
+        // Check for admin keyword in message field
+        document.addEventListener('DOMContentLoaded', function() {
+            const messageInput = document.getElementById('wishMessage');
+            if (messageInput) {
+                messageInput.addEventListener('input', function() {
+                    const message = this.value.trim();
+                    const adminPanel = document.getElementById('adminPanel');
+                    
+                    if (message.toLowerCase() === 'admin') {
+                        adminPanel.style.display = 'block';
+                    } else {
+                        adminPanel.style.display = 'none';
+                    }
+                });
+            }
+        });
+        
+        // Load existing wishes on page load
+        function loadWishes() {
+            const wishes = JSON.parse(localStorage.getItem('weddingWishes') || '[]');
+            const display = document.getElementById('wishes-display');
+            
+            if (wishes.length > 0) {
+                // Show all wishes
+                let html = '';
+                wishes.forEach(wish => {
+                    html += `
+                        <div class="wish-card" style="background: #fff; padding: 15px; border-radius: 10px; margin: 10px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <p class="wish-text" style="font-family: 'Arvo', serif; color: #7a5c4d; font-style: italic;">"${wish.message}"</p>
+                            <p class="wish-author" style="text-align: right; color: #b48a78; font-family: 'Dancing Script', cursive;">- ${wish.name}</p>
+                        </div>
+                    `;
+                });
+                display.innerHTML = html;
+            }
+        }
+        
+        function addWish() {
+            const nameInput = document.getElementById('wishName');
+            const messageInput = document.getElementById('wishMessage');
+            const name = nameInput ? nameInput.value.trim() : '';
+            const message = messageInput ? messageInput.value.trim() : '';
+            
+            if (name && message) {
+                // Get existing wishes
+                const wishes = JSON.parse(localStorage.getItem('weddingWishes') || '[]');
+                
+                // Get entry name from initial welcome form
+                const entryName = localStorage.getItem('guestName') || name;
+                
+                // Add new wish
+                wishes.push({
+                    entryName: entryName, // Name from initial welcome form
+                    name: name, // Name from current form (should be same as entryName)
+                    message: message,
+                    date: new Date().toLocaleString()
+                });
+                
+                // Save to local storage
+                localStorage.setItem('weddingWishes', JSON.stringify(wishes));
+                
+                // Auto-save to online backup when hosted
+                saveToOnlineBackup(wishes);
+                
+                // Clear message only (keep name)
+                if (messageInput) messageInput.value = '';
+                
+                // Refresh display
+                loadWishes();
+                
+                // Show success message
+                alert('Thank you ' + name + ' for your lovely wishes! They have been saved.\n\nYour presence means the world to us!');
+            } else {
+                alert('Please enter your wishes message!');
+            }
+        }
+        
+        // Function to save data to online backup (when hosted)
+        function saveToOnlineBackup(wishes) {
+            // Try to save to online storage if available
+            try {
+                // Method 1: Admin Data Store (built-in)
+                if (typeof AdminDataStore !== 'undefined') {
+                    const latestWish = wishes[wishes.length - 1];
+                    AdminDataStore.saveWish(latestWish);
+                    
+                    // Try external backup services
+                    AdminDataStore.saveToExternal(latestWish).then(success => {
+                        if (success) {
+                            console.log('Online backup successful!');
+                        } else {
+                            console.log('External backup failed, using local storage only');
+                        }
+                    });
+                }
+                
+                // Method 2: Google Sheets API (if configured)
+                if (typeof googleSheetsUrl !== 'undefined' && googleSheetsUrl) {
+                    fetch(googleSheetsUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            action: 'append',
+                            data: wishes[wishes.length - 1] // Save latest wish
+                        })
+                    }).catch(err => console.log('Google Sheets backup failed:', err));
+                }
+                
+                // Method 3: Email backup (if configured)
+                if (typeof emailBackup !== 'undefined' && emailBackup) {
+                    // Create email content
+                    const emailContent = `
+                        New Wedding Wish Received!
+                        
+                        Name: ${wishes[wishes.length - 1].entryName}
+                        Message: ${wishes[wishes.length - 1].message}
+                        Date: ${wishes[wishes.length - 1].date}
+                        
+                        Total Wishes: ${wishes.length}
+                    `;
+                    
+                    // Send via email service (placeholder)
+                    console.log('Email backup ready:', emailContent);
+                }
+                
+                // Method 4: Webhook backup (if configured)
+                if (typeof webhookUrl !== 'undefined' && webhookUrl) {
+                    fetch(webhookUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            type: 'wedding_wish',
+                            data: wishes[wishes.length - 1],
+                            total: wishes.length,
+                            timestamp: new Date().toISOString()
+                        })
+                    }).catch(err => console.log('Webhook backup failed:', err));
+                }
+                
+                // Method 5: Server backup (if configured)
+                if (typeof serverBackupUrl !== 'undefined' && serverBackupUrl) {
+                    fetch(serverBackupUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            action: 'save_wish',
+                            wishes: wishes,
+                            last_updated: new Date().toISOString()
+                        })
+                    }).catch(err => console.log('Server backup failed:', err));
+                }
+                
+            } catch (error) {
+                console.log('Online backup failed:', error);
+            }
+        }
+        
+        function finalSubmit() {
+            const nameInput = document.getElementById('wishName');
+            const messageInput = document.getElementById('wishMessage');
+            const name = nameInput ? nameInput.value.trim() : '';
+            const message = messageInput ? messageInput.value.trim() : '';
+            
+            if (name) {
+                // Get existing wishes
+                const wishes = JSON.parse(localStorage.getItem('weddingWishes') || '[]');
+                
+                // Get entry name from initial welcome form
+                const entryName = localStorage.getItem('guestName') || name;
+                
+                // Add entry - with or without message
+                wishes.push({
+                    entryName: entryName, // Name from initial welcome form
+                    name: name, // Name from current form
+                    message: message || 'Thank you for joining our celebration!', // Default message if empty
+                    date: new Date().toLocaleString()
+                });
+                
+                // Save to local storage
+                localStorage.setItem('weddingWishes', JSON.stringify(wishes));
+                
+                // Clear message only (keep name)
+                if (messageInput) messageInput.value = '';
+                
+                // Refresh display
+                loadWishes();
+                
+                // Show appropriate message
+                if (message) {
+                    alert('Thank you ' + name + ' for your lovely wishes! They have been saved.\n\nYour presence means the world to us!');
+                } else {
+                    alert('Thank you ' + name + ' for joining our celebration! Your presence has been recorded.\n\nWe look forward to seeing you!');
+                }
+                
+                // Then navigate to thankyou.html
+                setTimeout(function() {
+                    window.location.href = 'thankyou.html';
+                }, 1000);
+            } else {
+                alert('Guest name is required!');
+            }
+        }
+        
+        function downloadExcel() {
+            // Check if admin is logged in
+            if (!sessionStorage.getItem('adminLoggedIn')) {
+                alert('Admin login required to download wishes!');
+                return;
+            }
+            
+            const wishes = JSON.parse(localStorage.getItem('weddingWishes') || '[]');
+            
+            if (wishes.length === 0) {
+                alert('No wishes to download yet!');
+                return;
+            }
+            
+            // Create CSV content with entry name
+            let csv = 'Entry,EntryName,Name,Message,Date\n';
+            wishes.forEach((wish, index) => {
+                csv += `${index + 1},"${wish.entryName || wish.name}","${wish.name}","${wish.message}","${wish.date}"\n`;
+            });
+            
+            // Create download link
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'wedding-wishes.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+            
+            alert('Excel file downloaded successfully! You can open it in Excel.');
+        }
+        
+        function adminLogin() {
+            const password = document.getElementById('adminPassword').value.trim();
+            
+            // Default password (you can change this)
+            const validPassword = 'mahor123';
+            
+            if (password === validPassword) {
+                sessionStorage.setItem('adminLoggedIn', 'true');
+                document.getElementById('adminPassword').value = '';
+                alert('Admin login successful! You can now download wishes.');
+            } else {
+                alert('Invalid password! Please try again.');
+            }
+        }
+        
+        function adminLogout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            document.getElementById('adminPanel').style.display = 'none';
+            alert('Admin logged out successfully!');
+        }
+        
+        // Check admin status on page load
+        window.onload = function() {
+            loadGuestName();
+            loadWishes();
+            
+            // Show admin panel if already logged in
+            if (sessionStorage.getItem('adminLoggedIn')) {
+                document.getElementById('adminPanel').style.display = 'block';
+            }
+        };
+    </script>
+</body>
+</html>
